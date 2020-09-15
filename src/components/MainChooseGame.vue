@@ -287,7 +287,7 @@ export default {
 
 <style  lang="scss" scoped>
     .games {
-        padding: 405px 0px 0px;
+        padding: 405px 0px 41px;
         text-align: center;
 
           @media screen and (max-width: 1140px){

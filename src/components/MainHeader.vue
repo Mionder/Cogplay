@@ -166,6 +166,10 @@ export default {
             margin: 0px 26px;
             line-height: 30px;
             color: #fff;
+            &:hover{
+                color: #f9ca24;
+                transition: 0.3s;
+            }
              @media screen and (max-width: 1440px){
                  font-size: 16px;
                  margin: 0px 16px;
