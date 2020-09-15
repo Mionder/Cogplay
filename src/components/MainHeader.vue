@@ -5,9 +5,10 @@
             <a class="header__logo" href="#"><img src="img/logo1.svg" alt="logo"></a>
             <nav class="menu__body">
                 <ul class="menu__list">
-                    <li><a href="#" class="menu__link">Home</a></li>
-                    <li><a href="#" class="menu__link">Pricing</a></li>
-                    <li><a href="#" class="menu__link">Choose pricing plan </a></li>
+                    
+                    <li><router-link :to="'/'" class="menu__link">Home</router-link></li>
+                    <li><router-link :to="'/pricing'" class="menu__link">Pricing</router-link></li>
+                    <li><router-link :to="'/pricing'" class="menu__link">Choose pricing plan </router-link></li>
                 </ul>
             </nav>
         </div>
