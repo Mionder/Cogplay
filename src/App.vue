@@ -1,17 +1,13 @@
 <template>
   <div id="app">
-    <MainPage />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import MainPage from './components/MainPage.vue'
 
 export default {
   name: 'App',
-  components: {
-    MainPage
-  }
 }
 </script>
 
@@ -31,7 +27,14 @@ export default {
 
 @media screen and (max-width: 1440px){
     ._container{
-        width: 85%;
+        width: 80%;
     }
 }
+
+@media screen and (max-width: 1140px){
+    ._container {
+      width: 64%;
+    }
+}
+
 </style>

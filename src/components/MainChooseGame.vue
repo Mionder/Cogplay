@@ -289,6 +289,10 @@ export default {
     .games {
         padding: 405px 0px 0px;
         text-align: center;
+
+          @media screen and (max-width: 1140px){
+              padding-top: 220px;
+          }
 		// .games__container
 
 		&__container {
@@ -301,6 +305,13 @@ export default {
             font-size: 30px;
             line-height: 45px;
             color: #130F40;
+            @media screen and (max-width: 1440px){
+                 font-size: 24px;
+            }
+              @media screen and (max-width: 1140px){
+                  font-size: 20px;
+                  line-height: 30px;
+              }
 		}
 }
 .game {
@@ -308,6 +319,9 @@ export default {
         justify-content: space-between;
         flex-wrap: wrap;
         margin-top: 19px;
+        @media screen and (max-width: 1140px){
+          margin-top: 10px;   
+        }
         a{
             text-decoration: none;
         }
@@ -325,6 +339,10 @@ export default {
                   box-shadow: 0px 2px 7px rgba(37, 31, 110, 0.4);
                   transition: 0.3s;
             }
+             @media screen and (max-width: 1140px){
+                 width: 48%;
+                 padding: 15px 0px 14px;
+             }
 		}
 }
 .card-game {
@@ -335,6 +353,9 @@ export default {
             flex-direction: column;
             justify-content: space-between;
             min-height: 193px;
+            @media screen and (max-width: 1140px){
+                min-height: 147px;
+            }
             h4{
                 font-size: 20px;
                 line-height: 30px;
@@ -364,6 +385,11 @@ export default {
                 height: 28px;
                 border-radius: 50%;
                 background: #F9CA24 url(../assets/games/star.svg) center no-repeat;
+                 @media screen and (max-width: 1140px){
+                    top: -8px; 
+                    width: 24px;
+                    height: 24px
+                 }
             }
 		}
 
@@ -376,6 +402,9 @@ export default {
             width: 10%;
             &:last-child{
                 border-right: none;
+            }
+            @media screen and (max-width: 1140px){
+                height: 12px;
             }
         }
         &__active{

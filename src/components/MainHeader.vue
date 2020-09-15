@@ -75,11 +75,17 @@ export default {
         background: url(../assets/bg.png) no-repeat;
         background-size: cover;
         position: relative;
+         @media screen and (max-width: 1140px){
+             background-position: 47% 0%;
+         }
 		// .header__container
 
 		&__container {
             padding-bottom: 163px;
             color: #fff;
+             @media screen and (max-width: 1140px){
+                 padding-bottom: 87px;
+             }
 		}
 
 		// .header__menu
@@ -88,11 +94,21 @@ export default {
             display: flex;
             justify-content: space-between;
             padding: 19px 0px;
+             @media screen and (max-width: 1140px){
+                 padding: 10px 0px;
+             }
+
 		}
 
 		// .header__logo
 
 		&__logo {
+            img{
+                 @media screen and (max-width: 1140px){
+                    width: 55px;
+                }
+            }
+           
 		}
 
 		// .header__note
@@ -100,10 +116,27 @@ export default {
 		&__note {
             padding-top: 40px;
             max-width: 700px;
+            @media screen and (max-width: 1440px){
+                max-width: 500px;
+            }
+            @media screen and (max-width: 1140px){
+                padding-top: 28px;
+                max-width: 400px;
+            }
             p{
                 font-size: 22px;
                 line-height: 32px;
                 max-width: 474px;
+                @media screen and (max-width: 1440px){
+                    font-size: 18px;
+                    max-width: 374px;
+                    line-height: 28px;
+                }
+                @media screen and (max-width: 1140px){
+                    font-size: 16px;
+                    line-height: 19px;
+                    max-width: 311px;
+                }
             }
 		}
 }
@@ -133,6 +166,16 @@ export default {
             margin: 0px 26px;
             line-height: 30px;
             color: #fff;
+             @media screen and (max-width: 1440px){
+                 font-size: 16px;
+                 margin: 0px 16px;
+             }
+            @media screen and (max-width: 1140px){
+                font-size: 14px;
+                margin: 0px 14px;
+                line-height: 21px;
+                color: #fff;
+            }
 		}
 
         //.menu__active
@@ -154,6 +197,16 @@ export default {
                 color: #FFFFFF;
                 transition: 0.3s ease;
             }
+             @media screen and (max-width: 1440px){
+                 font-size: 12px;
+                  margin-left: 18px;
+                  padding: 8px 28px;
+             }
+             @media screen and (max-width: 1140px){
+                 font-size: 8px;
+                 line-height: 12px;
+                 padding: 6px 24px;
+             }
 		}
 }
 .main-note {
@@ -162,6 +215,12 @@ export default {
     line-height: 97.5%;
     color: #FFFFFF;
     letter-spacing: -2px;
+    @media screen and (max-width: 1440px){
+        font-size: 90px;
+    }
+    @media screen and (max-width: 1140px){
+        font-size: 73px;
+    }
 }
 
 // *********************** HEADER SECTION END *************************
@@ -178,6 +237,9 @@ export default {
         align-items: center;
         text-align: center;
         justify-content: center;
+        @media screen and (max-width: 1140px){
+            transform: translate(-50%, 76%);
+        }
 		// .courses__container
 
 		&__container {
@@ -210,6 +272,9 @@ export default {
 
 		&__about {
             padding:32px 15px 15px;
+            @media screen and (max-width: 1140px){
+                padding: 4px 10px 15px;
+            }
             h4{
                 font-weight: 600;
                 font-size: 22px;
@@ -218,6 +283,14 @@ export default {
                 color: #130F40;
                 max-width: 220px;
                 margin: 0 auto;
+                  @media screen and (max-width: 1440px){
+                      font-size: 18px;
+                      line-height: 24px;
+                  }
+                  @media screen and (max-width: 1140px){
+                      font-size: 14px;
+                      line-height: 21px;
+                  }
             }
             p{
                 font-size: 16px;
@@ -225,14 +298,20 @@ export default {
                 text-align: center;
                 color: #232323;
                 margin-top: 10px;
+                 @media screen and (max-width: 1440px){
+                    font-size: 12px;
+                    line-height: 20px;
+                 }
+                  @media screen and (max-width: 1140px){
+                      font-size: 9px;
+                      line-height: 13px;
+                  }
             }
 		}
 }
 
 // ************************  COURSES SECTION END ***************************
 
-
-// MEDIA HEADER
 
 
 </style>
