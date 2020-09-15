@@ -1,17 +1,19 @@
 <template>
   <div class="main">
-    <h1>wertyu</h1>
     <MainHeader />
+    <MainChooseGame />
   </div>
 </template>
 
 <script>
 
 import MainHeader from './MainHeader.vue'
+import MainChooseGame from './MainChooseGame.vue'
 export default {
   name: 'MainPage',
   components: {
-    MainHeader
+    MainHeader,
+    MainChooseGame
   }
 }
 </script>

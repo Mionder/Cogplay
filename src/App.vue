@@ -21,4 +21,17 @@ export default {
 #app {
  font-family: 'Poppins', sans-serif;
 }
+
+/* ._container */
+
+._container{
+   max-width: 1266px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1440px){
+    ._container{
+        width: 85%;
+    }
+}
 </style>
