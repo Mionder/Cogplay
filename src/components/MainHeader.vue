@@ -5,8 +5,8 @@
             <a class="header__logo" href="#"><img src="../assets/logo.svg" alt="logo"></a>
             <nav class="menu__body">
                 <ul class="menu__list">
-                    <li><a href="#" class="menu__link menu__active">Home</a></li>
-                    <li><a href="#" class="menu__link">Pricing</a></li>
+                    <li><router-link :to="'/'" class="menu__link menu__active">Home</router-link></li>
+                    <li><router-link :to="'/pricing'" href="#" class="menu__link">Pricing</router-link></li>
                     <li><a href="#" class="menu__button">Choose pricing plan </a></li>
                 </ul>
             </nav>
@@ -168,7 +168,6 @@ export default {
             color: #fff;
             &:hover{
                 color: #f9ca24;
-                transition: 0.3s;
             }
              @media screen and (max-width: 1440px){
                  font-size: 16px;

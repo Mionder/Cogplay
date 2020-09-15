@@ -90,8 +90,7 @@ export default {
             background: #FFFFFF;
             box-shadow: 0px 4px 14px rgba(19, 15, 64, 0.4);
             border-radius: 10px;
-            max-width: 402px;
-            width: 100%;
+            width: 32%;
             .pricing_card-price{
                 max-width: 253px;
                 height: auto;
@@ -122,6 +121,12 @@ export default {
                 color: #232323;
                 border: none;
                 cursor: pointer;
+                outline: none;
+                &:hover{
+                     background: #fff827;
+                     box-shadow: 0px 2px 7px rgba(37, 31, 110, 0.4);
+                     transition: 0.3s;
+                }
             }
         }
     }
