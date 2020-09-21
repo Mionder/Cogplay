@@ -3,7 +3,7 @@
         <div class="pricing_title-block">
             <div class="_container"> 
                 <div class="pricing_title-block_wrapper">
-                    <img src="../assets/Pricing/logo.png" alt="logo" class="logo">
+                    <router-link :to="'/'" ><img src="../assets/Pricing/logo.png" alt="logo" class="logo"></router-link>
                     <h3 class="pricing_title">Find the perfect plan for you</h3>
                     <p class="pricing_subtitle">Simple pricing that works at any scale</p>
                 </div>
