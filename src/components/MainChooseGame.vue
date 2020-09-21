@@ -289,10 +289,12 @@ export default {
     .games {
         padding: 405px 0px 41px;
         text-align: center;
-
-          @media screen and (max-width: 1140px){
-              padding-top: 220px;
-          }
+        @media screen and (max-width: 1140px){
+            padding-top: 220px;
+        }
+        @media screen and (max-width: 568px){
+            padding-top: 30px;
+        }
 		// .games__container
 
 		&__container {
@@ -343,6 +345,9 @@ export default {
                  width: 48%;
                  padding: 15px 0px 14px;
              }
+            @media screen and (max-width: 568px){
+                width: 100%;
+            }
 		}
 }
 .card-game {
@@ -356,11 +361,20 @@ export default {
             @media screen and (max-width: 1140px){
                 min-height: 147px;
             }
+            @media screen and (max-width: 568px){
+                min-height: 180px;
+            }
+            @media screen and (max-width: 360px){
+                min-height: 140px;
+            }
             h4{
                 font-size: 20px;
                 line-height: 30px;
                 text-align: center;
                 color: #232323;
+                 @media screen and (max-width: 992px){
+                     font-size: 16px;
+                 }
             }
 		}
 }
@@ -413,5 +427,7 @@ export default {
             border-radius: 20px 0px 0px 20px;
         }
 }
+
+
 
 </style>

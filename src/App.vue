@@ -26,7 +26,7 @@ export default {
 
 ._container{
    max-width: 1266px;
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1440px){
@@ -37,8 +37,20 @@ export default {
 
 @media screen and (max-width: 1140px){
     ._container {
-      width: 64%;
+      width: 70%;
     }
+}
+
+@media screen and (max-width: 992px){
+    ._container{
+      width: 80%;
+  }
+}
+
+@media screen and (max-width: 568px){
+   ._container{
+      width: 90%;
+  }
 }
 
 </style>

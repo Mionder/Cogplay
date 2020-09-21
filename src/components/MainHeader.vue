@@ -75,7 +75,7 @@ export default {
         background: url(../assets/bg.png) no-repeat;
         background-size: cover;
         position: relative;
-         @media screen and (max-width: 1140px){
+         @media screen and (max-width: 1200px){
              background-position: 47% 0%;
          }
 		// .header__container
@@ -83,7 +83,7 @@ export default {
 		&__container {
             padding-bottom: 163px;
             color: #fff;
-             @media screen and (max-width: 1140px){
+             @media screen and (max-width: 1200px){
                  padding-bottom: 87px;
              }
 		}
@@ -94,7 +94,7 @@ export default {
             display: flex;
             justify-content: space-between;
             padding: 19px 0px;
-             @media screen and (max-width: 1140px){
+             @media screen and (max-width: 1200px){
                  padding: 10px 0px;
              }
 
@@ -104,7 +104,7 @@ export default {
 
 		&__logo {
             img{
-                 @media screen and (max-width: 1140px){
+                 @media screen and (max-width: 1200px){
                     width: 55px;
                 }
             }
@@ -119,9 +119,12 @@ export default {
             @media screen and (max-width: 1440px){
                 max-width: 500px;
             }
-            @media screen and (max-width: 1140px){
+            @media screen and (max-width: 1200px){
                 padding-top: 28px;
                 max-width: 400px;
+            }
+            @media screen and (max-width: 568px){
+                padding: 120px 0px 90px;
             }
             p{
                 font-size: 22px;
@@ -132,7 +135,7 @@ export default {
                     max-width: 374px;
                     line-height: 28px;
                 }
-                @media screen and (max-width: 1140px){
+                @media screen and (max-width: 1200px){
                     font-size: 16px;
                     line-height: 19px;
                     max-width: 311px;
@@ -173,7 +176,7 @@ export default {
                  font-size: 16px;
                  margin: 0px 16px;
              }
-            @media screen and (max-width: 1140px){
+            @media screen and (max-width: 1200px){
                 font-size: 14px;
                 margin: 0px 14px;
                 line-height: 21px;
@@ -205,11 +208,14 @@ export default {
                   margin-left: 18px;
                   padding: 8px 28px;
              }
-             @media screen and (max-width: 1140px){
+             @media screen and (max-width: 1200px){
                  font-size: 8px;
                  line-height: 12px;
                  padding: 6px 24px;
              }
+              @media screen and (max-width: 568px){
+                  display: none;
+              }
 		}
 }
 .main-note {
@@ -221,9 +227,12 @@ export default {
     @media screen and (max-width: 1440px){
         font-size: 90px;
     }
-    @media screen and (max-width: 1140px){
-        font-size: 73px;
+    @media screen and (max-width: 1200px){
+        font-size: 70px;
     }
+     @media screen and (max-width: 360px){
+         font-size: 50px;
+     }
 }
 
 // *********************** HEADER SECTION END *************************
@@ -243,10 +252,15 @@ export default {
         @media screen and (max-width: 1140px){
             transform: translate(-50%, 76%);
         }
+        @media screen and (max-width: 568px){
+            display: none;
+        }
 		// .courses__container
-
-		&__container {
-		}
+         @media screen and (max-width: 768px){
+            &__container {
+                width: 90% !important;
+            }
+         }
 }
 .course {
         display: flex;

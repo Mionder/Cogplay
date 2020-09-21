@@ -50,9 +50,17 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
+         @media screen and (max-width: 568px){
+             flex-direction: column;
+             padding: 25px 0px;
+         }
         .logo{
             width: 88px;
             height: 49px;
+            @media screen and (max-width: 568px){
+                width: 55px;
+                height: 31px;
+            }
         }
         .footer_navigation,
         .footer_social{
@@ -69,6 +77,9 @@ export default {
                 color:#f9ca24;
                 transition: 0.3s;
             }
+            @media screen and (max-width: 992px){
+                font-size: 16px;
+            }
         }
         svg{
            path:hover{
@@ -78,6 +89,9 @@ export default {
         }
         .footer_navigation-item:first-child{
             margin-right: 51px;
+             @media screen and (max-width: 568px){
+                 margin-right: 30px;
+             }
         }
         .footer_social a{
             margin-right: 20px;
@@ -101,5 +115,8 @@ export default {
         text-align: center;
         color: #D8D8D8;
     }
+     @media screen and (max-width: 992px){
+         font-size: 12px;
+     }
 }
 </style>
